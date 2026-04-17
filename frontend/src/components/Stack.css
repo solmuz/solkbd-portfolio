@@ -1,0 +1,93 @@
+.stack {
+  background: var(--bg-warm);
+}
+
+.stack-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: var(--space-md);
+}
+
+.stack-group {
+  padding: 1.6rem 1.5rem;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-med) var(--ease-out-soft),
+              border-color var(--t-med) var(--ease-out-soft),
+              box-shadow var(--t-med) var(--ease-out-soft);
+}
+.stack-group:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.stack-category {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+.stack-category::before {
+  content: './';
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-right: 0.4rem;
+  font-size: 0.8em;
+}
+
+.stack-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stack-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.75rem 0.4rem 0.55rem;
+  background: var(--bg-warm);
+  border: 1px solid rgba(90, 30, 40, 0.12);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-dark);
+  transition: border-color var(--t-fast) var(--ease-out-soft),
+              color var(--t-fast) var(--ease-out-soft),
+              background var(--t-fast) var(--ease-out-soft),
+              transform var(--t-fast) var(--ease-out-soft);
+}
+.stack-item:hover {
+  border-color: var(--tech-color, var(--primary));
+  color: var(--primary);
+  background: var(--bg-cream);
+  transform: translateY(-1px);
+}
+
+.stack-item img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.stack-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tech-color, var(--muted));
+  margin: 0 0.3rem 0 0.2rem;
+  box-shadow: 0 0 0 2px rgba(90, 30, 40, 0.1);
+}
+
+@media (max-width: 768px) {
+  .stack-groups { grid-template-columns: 1fr; }
+}

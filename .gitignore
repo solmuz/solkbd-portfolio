@@ -1,0 +1,32 @@
+# ── Secrets ──
+.env
+.env.local
+.env.*.local
+
+# ── Node / Vite ──
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+.DS_Store
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── Editor / IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ──
+Thumbs.db
+
+# ── Docker / build ──
+*.pid

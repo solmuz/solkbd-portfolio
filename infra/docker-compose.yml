@@ -1,0 +1,43 @@
+services:
+  frontend:
+    image: nginx:alpine
+    container_name: solkbd-frontend
+    restart: unless-stopped
+    volumes:
+      - ../frontend/dist:/usr/share/nginx/html:ro
+      - ./nginx/solkbd.conf:/etc/nginx/conf.d/default.conf:ro
+    expose:
+      - "80"
+    depends_on:
+      - backend
+    networks:
+      - solkbd-net
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: solkbd-backend
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    expose:
+      - "8000"
+    networks:
+      - solkbd-net
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: solkbd-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    networks:
+      - solkbd-net
+    depends_on:
+      - frontend
+
+networks:
+  solkbd-net:
+    driver: bridge

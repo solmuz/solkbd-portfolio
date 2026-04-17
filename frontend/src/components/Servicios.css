@@ -1,0 +1,101 @@
+.servicios {
+  background: var(--bg-cream);
+  border-top: 1px solid rgba(212, 160, 168, 0.2);
+  border-bottom: 1px solid rgba(212, 160, 168, 0.2);
+}
+
+.section-lede {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.servicio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.8rem 1.6rem;
+  background: var(--bg-warm);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-med) var(--ease-out-soft),
+              box-shadow var(--t-med) var(--ease-out-soft),
+              border-color var(--t-med) var(--ease-out-soft);
+}
+.servicio-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-med) var(--ease-out-soft);
+}
+.servicio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+.servicio-card:hover::before { transform: scaleX(1); }
+
+.servicio-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(90, 30, 40, 0.08);
+  color: var(--primary);
+}
+
+.servicio-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--primary);
+  line-height: 1.25;
+}
+
+.servicio-desc {
+  font-size: 0.94rem;
+  color: var(--text-dark);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.servicio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.4rem;
+}
+.servicio-tags li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  padding: 0.2rem 0.55rem;
+  background: rgba(90, 30, 40, 0.06);
+  border: 1px solid rgba(90, 30, 40, 0.12);
+  border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+  .servicios-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .servicios-grid { grid-template-columns: 1fr; }
+}

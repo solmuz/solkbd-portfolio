@@ -1,0 +1,37 @@
+[
+  {
+    "id": "fullstack",
+    "title": "Desarrollo Web Fullstack",
+    "description": "Aplicaciones modernas de extremo a extremo con React + Vite en el frontend y Python FastAPI o Node.js en el backend, sobre PostgreSQL.",
+    "tags": ["React", "FastAPI", "PostgreSQL", "TypeScript"],
+    "icon": "code"
+  },
+  {
+    "id": "automation",
+    "title": "Automatización y Scripts",
+    "description": "Scripts Python y Bash para automatizar flujos internos: reportes, migraciones de datos, integraciones con APIs y tareas recurrentes.",
+    "tags": ["Python", "Bash", "APIs", "Cron"],
+    "icon": "terminal"
+  },
+  {
+    "id": "devops",
+    "title": "Infraestructura y DevOps",
+    "description": "Despliegue con Docker y Nginx en servidores propios o en la nube. Configuración de reverse proxy, HTTPS y monitoreo básico.",
+    "tags": ["Docker", "Nginx", "Linux", "Self-hosting"],
+    "icon": "server"
+  },
+  {
+    "id": "erp-lite",
+    "title": "Sistemas de Gestión a Medida",
+    "description": "ERP-lite para PYMEs: inventarios, RRHH, seguimiento de expedientes y trazabilidad. Diseño ajustado al proceso real del cliente.",
+    "tags": ["ERP", "Inventarios", "RRHH", "Gestión"],
+    "icon": "grid"
+  },
+  {
+    "id": "consulting",
+    "title": "Consultoría Técnica",
+    "description": "Revisión de arquitecturas existentes, auditoría de código, recomendaciones de stack y acompañamiento en decisiones técnicas.",
+    "tags": ["Arquitectura", "Auditoría", "Mentoring"],
+    "icon": "compass"
+  }
+]

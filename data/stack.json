@@ -1,0 +1,53 @@
+[
+  {
+    "category": "Frontend",
+    "items": [
+      { "name": "React",      "icon": "react/react-original.svg",            "color": "#61DAFB" },
+      { "name": "TypeScript", "icon": "typescript/typescript-original.svg",  "color": "#3178C6" },
+      { "name": "Vite",       "icon": "vitejs/vitejs-original.svg",          "color": "#646CFF" },
+      { "name": "HTML5",      "icon": "html5/html5-original.svg",            "color": "#E34F26" },
+      { "name": "CSS3",       "icon": "css3/css3-original.svg",              "color": "#1572B6" },
+      { "name": "JavaScript", "icon": "javascript/javascript-original.svg",  "color": "#F7DF1E" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "items": [
+      { "name": "Python",  "icon": "python/python-original.svg",   "color": "#3776AB" },
+      { "name": "FastAPI", "icon": "fastapi/fastapi-original.svg", "color": "#009688" },
+      { "name": "Node.js", "icon": "nodejs/nodejs-original.svg",   "color": "#339933" },
+      { "name": "REST APIs", "icon": "fastapi/fastapi-original.svg", "color": "#8A3545" }
+    ]
+  },
+  {
+    "category": "Bases de datos",
+    "items": [
+      { "name": "PostgreSQL", "icon": "postgresql/postgresql-original.svg", "color": "#4169E1" },
+      { "name": "SQLAlchemy", "icon": "sqlalchemy/sqlalchemy-original.svg", "color": "#D71F00" }
+    ]
+  },
+  {
+    "category": "DevOps / Infra",
+    "items": [
+      { "name": "Docker", "icon": "docker/docker-original.svg", "color": "#2496ED" },
+      { "name": "Nginx",  "icon": "nginx/nginx-original.svg",   "color": "#009639" },
+      { "name": "Linux",  "icon": "linux/linux-original.svg",   "color": "#FCC624" },
+      { "name": "Git",    "icon": "git/git-original.svg",       "color": "#F05032" },
+      { "name": "GitHub", "icon": "github/github-original.svg", "color": "#181717" }
+    ]
+  },
+  {
+    "category": "Herramientas",
+    "items": [
+      { "name": "VS Code",     "icon": "vscode/vscode-original.svg",        "color": "#007ACC" },
+      { "name": "JetBrains",   "icon": "intellij/intellij-original.svg",    "color": "#000000" },
+      { "name": "Claude Code", "icon": "",                                  "color": "#D97757" }
+    ]
+  },
+  {
+    "category": "Aprendiendo",
+    "items": [
+      { "name": "Spring", "icon": "spring/spring-original.svg", "color": "#6DB33F" }
+    ]
+  }
+]

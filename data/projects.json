@@ -1,0 +1,47 @@
+[
+  {
+    "id": "obras",
+    "name": "OBRAS — Sistema de Control de Izaje",
+    "description": "Aplicación fullstack para gestión de inspecciones y certificaciones de equipos de rigging en construcción. Trazabilidad completa de accesorios de izaje.",
+    "stack": ["React 18", "TypeScript", "Vite", "FastAPI", "PostgreSQL 16", "SQLAlchemy Async", "Alembic", "Docker"],
+    "status": "Producción",
+    "repo": "https://github.com/solmuz/obras",
+    "tags": ["Fullstack", "DevOps", "Construcción", "Docker"]
+  },
+  {
+    "id": "imc-ivg",
+    "name": "IMC IVG — Web App de Gestión",
+    "description": "Aplicación web interna para una empresa clínica. Módulos de control desarrollados en Python.",
+    "stack": ["Python", "MySQL"],
+    "status": "Producción",
+    "repo": "https://github.com/solmuz/imc_ivg",
+    "tags": ["Python", "Gestión", "Empresa", "Backend"]
+  },
+  {
+    "id": "solkbd-portfolio",
+    "name": "SolKBD Portfolio Site",
+    "description": "Este mismo sitio — diseño, arquitectura y despliegue en homelab propio como demostración de capacidades end-to-end.",
+    "stack": ["React", "Vite", "FastAPI", "Nginx", "Docker", "solgap"],
+    "status": "En desarrollo",
+    "repo": "https://github.com/solmuz/solkbd-portfolio",
+    "tags": ["Frontend", "DevOps", "Self-hosted"]
+  },
+  {
+    "id": "solgap",
+    "name": "Homelab solgap",
+    "description": "Servidor Ubuntu 24.04 auto-hospedado con stack completo: Jellyfin, arr stack (Sonarr/Radarr/Prowlarr/qBittorrent), Minecraft server, DuckDNS y Nginx reverse proxy.",
+    "stack": ["Ubuntu 24.04", "Docker", "Nginx", "Jellyfin", "*arr", "DuckDNS"],
+    "status": "Operativo",
+    "repo": null,
+    "tags": ["DevOps", "Self-hosting", "Linux", "Infraestructura"]
+  },
+  {
+    "id": "ga-reynosa",
+    "name": "GA Reynosa y Asociados",
+    "description": "Proyecto de almacenamiento y compresión de archivos para seguimiento de expedientes aduanales.",
+    "stack": ["FastAPI", "PostgreSQL", "React", "MinIO", "Docker", "Nginx"],
+    "status": "Operativo",
+    "repo": "https://github.com/solmuz/ga_reynosa",
+    "tags": ["Python", "Fullstack", "Self-hosted", "Backend"]
+  }
+]

@@ -1,0 +1,101 @@
+.footer {
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(176, 96, 112, 0.15), transparent 50%),
+    linear-gradient(135deg, var(--primary) 0%, var(--dark-burgundy) 100%);
+  color: var(--bg-cream);
+  padding: 3.5rem 2rem 1.5rem;
+  margin-top: 0;
+}
+
+.footer-inner {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-brand img {
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.3));
+}
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.footer-brand-text strong {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  color: var(--bg-cream);
+}
+.footer-brand-text em {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(253, 246, 247, 0.55);
+  margin-top: 4px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer-nav a {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(253, 246, 247, 0.75);
+  text-decoration: none;
+  transition: color var(--t-fast) var(--ease-out-soft);
+}
+.footer-nav a:hover { color: var(--bg-cream); }
+
+.footer-direct {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.footer-direct a {
+  color: var(--bg-cream);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(253, 246, 247, 0.2);
+  padding-bottom: 1px;
+  width: fit-content;
+  transition: border-color var(--t-fast), color var(--t-fast);
+}
+.footer-direct a:hover {
+  color: #E8B8BE;
+  border-bottom-color: #E8B8BE;
+}
+
+.footer-bottom {
+  max-width: var(--max-content);
+  margin: 2rem auto 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(253, 246, 247, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: rgba(253, 246, 247, 0.5);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .footer { padding: 2.5rem 1.25rem 1.25rem; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+}

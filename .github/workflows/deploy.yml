@@ -1,0 +1,85 @@
+name: Deploy SolKBD Portfolio to solgap
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend deps
+        run: npm ci
+        working-directory: frontend
+
+      - name: Build frontend
+        run: npm run build
+        working-directory: frontend
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SOLGAP_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H "${{ secrets.SOLGAP_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Rsync project to solgap
+        run: |
+          rsync -avz --delete \
+            --exclude='.git' \
+            --exclude='node_modules' \
+            --exclude='frontend/node_modules' \
+            --exclude='backend/__pycache__' \
+            -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.SOLGAP_SSH_PORT || 22 }}" \
+            ./ \
+            "${{ secrets.SOLGAP_USER }}@${{ secrets.SOLGAP_HOST }}:${{ secrets.SOLGAP_PATH }}/"
+
+      - name: Remote deploy (docker compose up)
+        run: |
+          ssh -i ~/.ssh/id_ed25519 \
+              -p ${{ secrets.SOLGAP_SSH_PORT || 22 }} \
+              "${{ secrets.SOLGAP_USER }}@${{ secrets.SOLGAP_HOST }}" \
+              "cd ${{ secrets.SOLGAP_PATH }}/infra && \
+               docker compose pull || true && \
+               docker compose up -d --build && \
+               docker compose ps"
+
+      - name: Health check
+        run: |
+          sleep 5
+          curl -fsS "https://www.solkbd.com/api/health" || \
+          curl -fsS "https://${{ secrets.SOLGAP_HOST }}/api/health"
