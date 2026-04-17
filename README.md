@@ -9,7 +9,7 @@ Desarrollador fullstack y DevOps en Monterrey, N.L., México.
 | Capa      | Tecnología                            |
 | --------- | ------------------------------------- |
 | Frontend  | React 18 + Vite + TypeScript          |
-| Backend   | FastAPI (Phase 5 — no implementado)   |
+| Backend   | FastAPI                               |
 | Infra     | Docker Compose + Nginx                |
 | Hosting   | Homelab `solgap` (Ubuntu 24.04) + Cloudflare |
 
@@ -20,7 +20,7 @@ frontend/   # SPA (Vite + React + TS)
 backend/    # API FastAPI (scaffold)
 data/       # Contenido editable (services.json, stack.json, projects.json)
 infra/      # docker-compose + nginx config
-.github/    # CI/CD (Phase 6)
+.github/    # CI/CD 
 ```
 
 ## Desarrollo
@@ -58,16 +58,4 @@ es la fuente única de verdad.
 
 - `data/services.json` — cinco servicios de la sección Servicios
 - `data/stack.json` — tecnologías agrupadas por categoría
-- `data/projects.json` — proyectos destacados (Phase 4)
-
-## Estado por fase
-
-- [x] **Phase 1** — Estructura del repo, Docker Compose dev, Nginx básico
-- [x] **Phase 2** — Diseño base (paleta Mocha Bohemio, tipografía, logo)
-- [x] **Phase 3** — Secciones estáticas (Hero, Sobre Mí, Servicios, Stack)
-- [ ] **Phase 4** — Proyectos grid + GitHub API proxy
-- [ ] **Phase 5** — Backend contacto (FastAPI + SMTP)
-- [ ] **Phase 6** — CI/CD + deploy en solgap
-- [ ] **Phase 7** — Pulido (Lighthouse, SEO, OG, favicon)
-
-Ver requerimientos completos en `docs/requerimientos.docx` (pendiente mover).
+- `data/projects.json` — proyectos destacados
