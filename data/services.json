@@ -23,8 +23,8 @@
   {
     "id": "erp-lite",
     "title": "Sistemas de Gestión a Medida",
-    "description": "ERP-lite para PYMEs: inventarios, RRHH, seguimiento de expedientes y trazabilidad. Diseño ajustado al proceso real del cliente.",
-    "tags": ["ERP", "Inventarios", "RRHH", "Gestión"],
+    "description": "ERP-lite para PYMEs: inventarios, RRHH, seguimiento de expedientes, páginas promocionales y trazabilidad. Diseño ajustado al proceso real del cliente.",
+    "tags": ["ERP", "Inventarios", "RRHH", "Gestión", "Promocionales"],
     "icon": "grid"
   },
   {

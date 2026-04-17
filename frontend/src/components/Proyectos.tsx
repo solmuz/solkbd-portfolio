@@ -170,7 +170,6 @@ export default function Proyectos() {
               </div>
               <p className="gh-desc">{r.description ?? 'Sin descripción.'}</p>
               <div className="gh-meta">
-                <span>★ {r.stargazers_count}</span>
                 <span>actualizado {formatDate(r.updated_at)}</span>
               </div>
             </a>

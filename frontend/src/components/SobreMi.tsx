@@ -17,10 +17,10 @@ export default function SobreMi() {
             <img src="/images/logo-dark.png" alt="SolKBD" width="120" height="120" />
           </div>
           <p>
-            Soy <strong>Jose Daniel Muñoz Martínez</strong>, desarrollador
-            fullstack y DevOps radicado en <strong>Monterrey, Nuevo León</strong>.
+            Mi nombre es <strong>Jose Daniel Muñoz Martínez</strong>, soy un desarrollador
+            fullstack y DevOps ubicado en <strong>Monterrey, Nuevo León</strong>.
             Construyo productos web y sistemas internos que la gente realmente
-            usa — sin framework innecesario, sin abstracciones que sobran.
+            usa — sin framework innecesario y sin abstracciones que sobran.
           </p>
           <p>
             Mi enfoque combina backend sólido (FastAPI, PostgreSQL) con
@@ -48,17 +48,17 @@ export default function SobreMi() {
         <ScrollReveal className="sobre-stats" stagger>
           <div className="stat-card">
             <span className="stat-label">Experiencia</span>
-            <span className="stat-value">5+ años</span>
-            <span className="stat-detail">construyendo software de producción</span>
+            <span className="stat-value">2+ años</span>
+            <span className="stat-detail">construyendo software</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Proyectos</span>
-            <span className="stat-value">12+</span>
+            <span className="stat-value">5+</span>
             <span className="stat-detail">entre clientes y homelab</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Homelab</span>
-            <span className="stat-value">solgap</span>
+            <span className="stat-value">Linux server</span>
             <span className="stat-detail">Ubuntu 24.04 · Docker · Nginx</span>
           </div>
           <div className="stat-card">
