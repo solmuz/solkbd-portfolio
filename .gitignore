@@ -30,3 +30,4 @@ Thumbs.db
 
 # ── Docker / build ──
 *.pid
+frontend/tsconfig.tsbuildinfo
