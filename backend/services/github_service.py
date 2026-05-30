@@ -36,7 +36,6 @@ async def fetch_github_repos() -> list[dict[str, Any]]:
             "description":       repo.get("description"),
             "html_url":          repo["html_url"],
             "language":          repo.get("language"),
-            "stargazers_count":  repo.get("stargazers_count", 0),
             "updated_at":        repo.get("updated_at"),
             "topics":            repo.get("topics", []),
         }

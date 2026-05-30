@@ -2,8 +2,8 @@
   {
     "id": "fullstack",
     "title": "Desarrollo Web Fullstack",
-    "description": "Aplicaciones modernas de extremo a extremo con React + Vite en el frontend y Python FastAPI o Node.js en el backend, sobre PostgreSQL.",
-    "tags": ["React", "FastAPI", "PostgreSQL", "TypeScript"],
+    "description": "Aplicaciones modernas de extremo a extremo con React + Vite en el frontend y el backend en el framework que mejor se adapte: FastAPI, Express, ASP.NET Core o Laravel, sobre PostgreSQL.",
+    "tags": ["React", "FastAPI", "Express", "ASP.NET", "Laravel", "PostgreSQL", "TypeScript"],
     "icon": "code"
   },
   {
@@ -23,8 +23,8 @@
   {
     "id": "erp-lite",
     "title": "Sistemas de Gestión a Medida",
-    "description": "ERP-lite para PYMEs: inventarios, RRHH, seguimiento de expedientes y trazabilidad. Diseño ajustado al proceso real del cliente.",
-    "tags": ["ERP", "Inventarios", "RRHH", "Gestión"],
+    "description": "ERP-lite para PYMEs: inventarios, RRHH, seguimiento de expedientes, páginas promocionales y trazabilidad. Diseño ajustado al proceso real del cliente.",
+    "tags": ["ERP", "Inventarios", "RRHH", "Gestión", "Promocionales"],
     "icon": "grid"
   },
   {

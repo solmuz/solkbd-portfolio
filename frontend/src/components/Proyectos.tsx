@@ -154,23 +154,29 @@ export default function Proyectos() {
         )}
 
         {repos &&
-          repos.map((r) => (
+          repos.slice(0, 6).map((r) => (
             <a key={r.name} className="gh-card" href={r.html_url} target="_blank" rel="noopener">
               <div className="gh-card-head">
                 <span className="gh-repo-name">{r.name}</span>
-                {r.language && (
-                  <span className="gh-lang">
-                    <span
-                      className="gh-lang-dot"
-                      style={{ background: LANG_COLORS[r.language] ?? '#999' }}
-                    />
-                    {r.language}
-                  </span>
-                )}
               </div>
               <p className="gh-desc">{r.description ?? 'Sin descripción.'}</p>
+              {(r.language || (r.topics && r.topics.length > 0)) && (
+                <div className="gh-topics">
+                  {r.language && (
+                    <span className="gh-topic gh-topic--lang">
+                      <span
+                        className="gh-lang-dot"
+                        style={{ background: LANG_COLORS[r.language] ?? '#999' }}
+                      />
+                      {r.language}
+                    </span>
+                  )}
+                  {r.topics?.map((t) => (
+                    <span key={t} className="gh-topic">{t}</span>
+                  ))}
+                </div>
+              )}
               <div className="gh-meta">
-                <span>★ {r.stargazers_count}</span>
                 <span>actualizado {formatDate(r.updated_at)}</span>
               </div>
             </a>

@@ -36,6 +36,15 @@
     "tags": ["DevOps", "Self-hosting", "Linux", "Infraestructura"]
   },
   {
+    "id": "api-backends",
+    "name": "Backends & APIs — Multiframework",
+    "description": "APIs REST construidas con el stack que el proyecto exige: ASP.NET Core (.NET 8), Express (Node.js), Laravel (PHP) y FastAPI (Python). Documentación automática con Swagger / OpenAPI.",
+    "stack": ["ASP.NET Core", "Express", "Laravel", "FastAPI", "C#", "Node.js", "PHP"],
+    "status": "En desarrollo",
+    "repo": null,
+    "tags": ["API", "Backend", ".NET", "Node.js", "PHP"]
+  },
+  {
     "id": "ga-reynosa",
     "name": "GA Reynosa y Asociados",
     "description": "Proyecto de almacenamiento y compresión de archivos para seguimiento de expedientes aduanales.",
