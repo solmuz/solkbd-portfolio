@@ -15,8 +15,12 @@
     "items": [
       { "name": "Python",  "icon": "python/python-original.svg",   "color": "#3776AB" },
       { "name": "FastAPI", "icon": "fastapi/fastapi-original.svg", "color": "#009688" },
-      { "name": "Node.js", "icon": "nodejs/nodejs-original.svg",   "color": "#339933" },
-      { "name": "REST APIs", "icon": "fastapi/fastapi-original.svg", "color": "#8A3545" }
+      { "name": "Node.js",  "icon": "nodejs/nodejs-original.svg",           "color": "#339933" },
+      { "name": "Express",  "icon": "express/express-original.svg",         "color": "#000000" },
+      { "name": "ASP.NET",  "icon": "dot-net/dot-net-original.svg",          "color": "#512BD4" },
+      { "name": "REST APIs", "icon": "fastapi/fastapi-original.svg",          "color": "#8A3545" },
+      { "name": "PHP",      "icon": "php/php-original.svg",                  "color": "#777BB4" },
+      { "name": "Laravel",  "icon": "laravel/laravel-original.svg",           "color": "#FF2D20" }
     ]
   },
   {
@@ -40,6 +44,7 @@
     "category": "Herramientas",
     "items": [
       { "name": "VS Code",     "icon": "vscode/vscode-original.svg",        "color": "#007ACC" },
+      { "name": "Vim",         "icon": "vim/vim-original.svg",               "color": "#019733" },
       { "name": "JetBrains",   "icon": "intellij/intellij-original.svg",    "color": "#000000" },
       { "name": "Claude Code", "icon": "",                                  "color": "#D97757" }
     ]

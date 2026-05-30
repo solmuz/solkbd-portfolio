@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="hero-role">Desarrollador Fullstack / DevOps</p>
 
         <p className="hero-desc">
-          Construyo sistemas a la medida para empresas que valoran el software
+          Construimos sistemas a la medida para empresas que valoran el software
           bien hecho. Arquitectura limpia, infraestructura propia, entrega con
           cuidado — desde Monterrey, N.L.
         </p>

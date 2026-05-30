@@ -230,6 +230,28 @@
   overflow: hidden;
 }
 
+.gh-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.gh-topic {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  background: var(--bg-card, var(--bg-warm));
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+}
+.gh-topic--lang {
+  color: var(--text-dark);
+  border-color: var(--border-soft);
+}
+
 .gh-meta {
   display: flex;
   gap: 1rem;

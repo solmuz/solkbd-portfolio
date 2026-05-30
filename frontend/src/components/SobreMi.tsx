@@ -19,13 +19,13 @@ export default function SobreMi() {
           <p>
             Mi nombre es <strong>Jose Daniel Muñoz Martínez</strong>, soy un desarrollador
             fullstack y DevOps ubicado en <strong>Monterrey, Nuevo León</strong>.
-            Construyo productos web y sistemas internos que la gente realmente
+            Junto a mi equipo onstruyo productos web y sistemas internos que la gente realmente
             usa — sin framework innecesario y sin abstracciones que sobran.
           </p>
           <p>
-            Mi enfoque combina backend sólido (FastAPI, PostgreSQL) con
+            Nuestro enfoque combina backend sólido (FastAPI, PostgreSQL) con
             infraestructura auto-hospedada (Docker, Nginx, homelab propio
-            "solgap"). Lo que construyo lo despliego, lo monitoreo y lo mantengo.
+            "solgap"). Lo que construimos lo desplegamos, lo monitoreamos y lo mantenemos.
           </p>
           <div className="sobre-links">
             <a href="https://github.com/solmuz" target="_blank" rel="noopener">
@@ -48,13 +48,13 @@ export default function SobreMi() {
         <ScrollReveal className="sobre-stats" stagger>
           <div className="stat-card">
             <span className="stat-label">Experiencia</span>
-            <span className="stat-value">2+ años</span>
+            <span className="stat-value">3+ años</span>
             <span className="stat-detail">construyendo software</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Proyectos</span>
             <span className="stat-value">5+</span>
-            <span className="stat-detail">entre clientes y homelab</span>
+            <span className="stat-detail">entre clientes y servidores</span>
           </div>
           <div className="stat-card">
             <span className="stat-label">Homelab</span>
